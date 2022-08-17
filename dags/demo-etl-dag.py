@@ -48,7 +48,7 @@ def demo_etl_dag():
         A simple "transform" task which takes in the collection of order data and
         computes the total order value.
         """
-        total_order_value = 10
+        total_order_value = 10/3
 
         for value in order_data_dict.values():
             total_order_value += value
