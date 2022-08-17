@@ -19,7 +19,7 @@ from airflow.decorators import dag, task # DAG and task decorators for interfaci
         "retries": 2, # If a task fails, it will retry 2 times.
     },
     tags=['example']) # If set, this tag is shown in the DAG view of the Airflow UI
-def example_dag_basic():
+def demo_etl_dag():
     """
     ### Basic ETL Dag
     This is a simple ETL data pipeline example that demonstrates the use of
@@ -69,4 +69,4 @@ def example_dag_basic():
     order_summary = transform(order_data)
     load(order_summary["total_order_value"])
 
-example_dag_basic = example_dag_basic()
+demo_etl_dag = demo_etl_dag()
